@@ -6,6 +6,7 @@ RUN yum -y install http://repo.grid.iu.edu/osg/3.3/osg-3.3-el6-release-latest.rp
     yum -y install osg-wn-client \
                    osg-wn-client-glexec \
                    redhat-lsb-core 
+    yum -y install libgfortran
 
 # Install Singularity
 RUN yum -y install --enablerepo osg-upcoming-development singularity && \
